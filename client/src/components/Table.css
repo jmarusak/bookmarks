@@ -1,0 +1,35 @@
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.links-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 16px;
+  text-align: left;
+}
+
+.links-table th,
+.links-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.links-table th {
+  background-color: #f4f4f4;
+}
+
+.links-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.links-table a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.links-table a:hover {
+  text-decoration: underline;
+}
