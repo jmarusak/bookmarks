@@ -1,4 +1,5 @@
 from typing import Optional
+from uuid import uuid4
 
 from ..models import Link
 from ..datastore import Database
@@ -9,6 +10,7 @@ class LinkService:
 
     def create(self, link: Link) -> str:
         data = self.db.read()
+        link.link_id = str(uuid4())
         data["link"].append(link.model_dump())
         self.db.write()
         return link.link_id

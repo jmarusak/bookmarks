@@ -16,14 +16,34 @@ const FormPage = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const newEntry = {
       ...formData,
       created_on: new Date().toISOString(), // Auto-generate timestamp
     };
 
-    console.log("Formed:", newEntry); // Replace this with API call or state update
+    console.log(newEntry);
+
+    try {
+      const response = await fetch('http://localhost:8000/api/links', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*',
+        },
+        body: JSON.stringify(newEntry)
+      });
+
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+
+      const data = await response.json();
+      console.log('Success:', data);
+    } catch (error) {
+      console.error('Error:', error);
+    }
     //navigate("/");
   };
 

@@ -1,4 +1,3 @@
-import datetime
 from pydantic import BaseModel
 
 class Link(BaseModel):
@@ -9,4 +8,4 @@ class Link(BaseModel):
     url: str
     title: str
     description: str
-    created_on: datetime.datetime
+    created_on: str

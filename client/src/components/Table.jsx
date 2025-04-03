@@ -22,7 +22,7 @@ const Table = ({ links }) => {
                   {link.url}
                 </a>
               </td>
-              <td>{new Date(link.created_on).toLocaleDateString()}</td>
+              <td>{link.created_on}</td>
             </tr>
           ))}
         </tbody>
