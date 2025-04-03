@@ -1,30 +1,25 @@
-.insert-page {
+.delete-page {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.insert-form {
+.delete-form {
   display: flex;
   flex-direction: column;
   width: 600px;
 }
 
-.insert-form input {
+.delete-form input {
   font-size: 15px;
   height: 40px;
 }
 
-.insert-form textarea {
-  font-size: 15px;
-  height: 200px;
-}
-
-.insert-form label {
+.delete-form label {
   margin-top: 10px;
 }
 
-.insert-form button {
+.delete-form button {
   margin-top: 10px;
   padding: 10px;
   background-color: #007BFF;
@@ -35,6 +30,6 @@
   cursor: pointer;
 }
 
-.insert-form button:hover {
+.delete-form button:hover {
   background-color: #0056b3;
 }

@@ -33,3 +33,10 @@
 .links-table a:hover {
   text-decoration: underline;
 }
+
+.table-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+}

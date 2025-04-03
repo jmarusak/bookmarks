@@ -1,15 +1,16 @@
 import { useState } from "react";
-//import { useNavigate } from "react-router-dom";
-import "./FormPage.css"; // Import external CSS file
+import { useNavigate } from "react-router-dom";
+import "./InsertPage.css";
 
-const FormPage = () => {
+const InsertPage = () => {
   const [formData, setFormData] = useState({
-    link_id: "",
     url: "",
+    image: "",
     title: "",
+    category: "",
     description: "",
   });
-  //const navigate = useNavigate();
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -18,12 +19,12 @@ const FormPage = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    const now = new Date().toISOString();
     const newEntry = {
+      link_id: now,
       ...formData,
-      created_on: new Date().toISOString(), // Auto-generate timestamp
+      created_on: now,
     };
-
-    console.log(newEntry);
 
     try {
       const response = await fetch('http://localhost:8000/api/links', {
@@ -40,11 +41,11 @@ const FormPage = () => {
       }
 
       const data = await response.json();
-      console.log('Success:', data);
+      console.log('link_id:', data);
     } catch (error) {
       console.error('Error:', error);
     }
-    //navigate("/");
+    navigate("/");
   };
 
   return (
@@ -54,16 +55,34 @@ const FormPage = () => {
         <label>URL:</label>
         <input type="url" name="url" value={formData.url} onChange={handleChange} required />
 
+        <label>Image:</label>
+        <input type="url" name="image" value={formData.image} onChange={handleChange} required />
+
         <label>Title:</label>
         <input type="text" name="title" value={formData.title} onChange={handleChange} required />
+
+        <label>Category:</label>
+
+        <select name="category" value={formData.category} onChange={handleChange} required>
+          <option value="">Select a category</option>
+          <option value="blog">blog</option>
+          <option value="book">book</option>
+          <option value="course">course</option>
+          <option value="doc">doc</option>
+          <option value="github">github</option>
+          <option value="medium">medium</option>
+          <option value="news">news</option>
+          <option value="paper">paper</option>
+          <option value="recipe">recipe</option>
+        </select>
 
         <label>Description:</label>
         <textarea name="description" value={formData.description} onChange={handleChange} required />
 
-        <button type="submit">Add</button>
+        <button type="submit">Save</button>
       </form>
     </div>
   );
 }
 
-export default FormPage;
+export default InsertPage;

@@ -1,0 +1,31 @@
+{
+  "links": [
+    {
+      "link_id": "2025-04-03T15:41:09.230Z",
+      "url": "https://ai.google.dev/gemini-api/tutorials/sql-talk",
+      "image": "https://ai.google.dev/gemini-api/tutorials/images/sql-talk.png",
+      "title": "Build an AI data exploration agent with Gemini",
+      "category": "recipe",
+      "description": "These instructions walk you through getting the SQL Talk project setup for development and testing.",
+      "created_on": "2025-04-03T15:41:09.230Z"
+    },
+    {
+      "link_id": "2025-04-03T15:34:17.441Z",
+      "url": "https://www.oneusefulthing.org/",
+      "image": "https://substackcdn.com/image/fetch/w_1360,c_limit,f_webp,q_auto:best,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fc9d041c0-0e71-4c6c-9896-509b8697b45e_1024x1024.png",
+      "title": "Prof. Ethan Mollick",
+      "category": "blog",
+      "description": "Trying to understand the implications of AI for work, education, and life.",
+      "created_on": "2025-04-03T15:34:17.441Z"
+    },
+    {
+      "link_id": "2025-04-03T15:32:45.006Z",
+      "url": "https://huyenchip.com/",
+      "image": "https://huyenchip.com/assets/profile.jpeg",
+      "title": "Chip Huyen",
+      "category": "blog",
+      "description": "My focus is on ML/AI systems in production. I\u2019m currently exploring creative use cases of AI in education and entertainment.",
+      "created_on": "2025-04-03T15:32:45.006Z"
+    }
+  ]
+}

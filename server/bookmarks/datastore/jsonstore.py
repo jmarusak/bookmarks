@@ -1,8 +1,7 @@
 import json
-
 from typing import Dict
 
-class Database:
+class JsonStore:
     def __init__(self, filename: str):
         self.filename = filename
 

@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Prompt from "./components/Prompt";
 import Table from "./components/Table";
 
-const TablePage = () => {
+const ListPage = () => {
 
   const [rowData, setRowData] = useState([]);
 
@@ -20,7 +20,6 @@ const TablePage = () => {
     }
   };
 
-  // Fetch data when component mounts
   useEffect(() => {
     fetchData();
   }, []);
@@ -42,4 +41,4 @@ const TablePage = () => {
   );
 };
 
-export default TablePage;
+export default ListPage;

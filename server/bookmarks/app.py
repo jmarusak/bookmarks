@@ -1,39 +1,40 @@
-from fastapi import FastAPI, HTTPException
-from fastapi.middleware.cors import CORSMiddleware
-
 from typing import List
 
-from bookmarks.datastore import Database
-from bookmarks.services import LinkService
+from fastapi import FastAPI
+from fastapi.staticfiles import StaticFiles
+from fastapi.middleware.cors import CORSMiddleware
+
 from bookmarks.models.link import Link
 
 api: FastAPI = FastAPI()
+api.mount("/static", StaticFiles(directory="bookmarks/static", html=True), name="static")
 api.add_middleware(
-    CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://localhost:80"],
+    CORSMiddleware, 
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-db: Database = Database("bookmarks/datastore/database.json")
-service: LinkService = LinkService(db)
+# Initialize the JSON store
+#from bookmarks.datastore import JsonStore 
+#from bookmarks.services import JsonService
+#store: JsonStore = JsonStore("bookmarks/datastore/store.json")
+#service: JsonService = JsonService(store)
+
+# Initialize the SQLite database
+from bookmarks.services import SqlService
+store: str = "bookmarks/datastore/store.sqlite"
+service: SqlService = SqlService(store)
 
 @api.get("/")
 def read_root():
-    return {"message": "Welcome to Bookmarks API"}
+    return "Welcome to the Bookmarks API"
 
 @api.post("/api/links", response_model=str)
 def create_link(link: Link):
     link_id = service.create(link)
     return link_id
-
-@api.get("/api/links/{link_id}", response_model=Link)
-def get_link(link_id: str):
-    link = service.get(link_id)
-    if link is None:
-        raise HTTPException(status_code=404, detail="Link not found")
-    return link
 
 @api.get("/api/links", response_model=List[Link])
 def get_all_links():
@@ -41,8 +42,6 @@ def get_all_links():
 
 @api.delete("/api/links/{link_id}")
 def delete_link(link_id: str):
-    link = service.get(link_id)
-    if link is None:
-        raise HTTPException(status_code=404, detail="Link not found")
+    print(f"Deleting link with ID: {link_id}")
     service.delete(link_id)
     return {"message": "Link deleted successfully"} 
