@@ -1,2 +1,6 @@
-# bookmarks
-A database of links accessible from anywhere
+# Bookmarks
+
+A universal, cloud-based bookmark manager with semantic search. Access all your links anytime, from any device, browser, or profile.
+---
+![image](images/screenshot.png)
+---
