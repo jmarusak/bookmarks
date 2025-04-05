@@ -1,31 +1,292 @@
 {
   "links": [
     {
-      "link_id": "2025-04-03T15:41:09.230Z",
+      "link_id": "2025-04-05T00:57:21.752Z",
+      "url": "https://refactoring.guru/",
+      "image": "https://refactoring.guru/images/content-public/logos/logo-new.png",
+      "title": "Refactoring Guru",
+      "category": "recipe",
+      "description": "Refactoring and Design Patterns in multiple languages.",
+      "created_on": "2025-04-05T00:57:21.752Z"
+    },
+    {
+      "link_id": "2025-04-05T00:54:40.842Z",
+      "url": "https://github.com/PacktPublishing/Generative-AI-on-Google-Cloud-with-LangChain",
+      "image": "https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png",
+      "title": "Generative AI on Google Cloud with LangChain",
+      "category": "github",
+      "description": "Book repository, sample of NL2SQL",
+      "created_on": "2025-04-05T00:54:40.842Z"
+    },
+    {
+      "link_id": "2025-04-05T00:52:05.720Z",
+      "url": "https://cloud.google.com/blog/topics/developers-practitioners/boost-your-continuous-delivery-pipeline-with-generative-ai",
+      "image": "https://cdn-images-1.medium.com/max/184/1*B8ovMiQN38kbeu-4yK0-VA@2x.png",
+      "title": "Continuous Delivery pipeline with Generative AI",
+      "category": "recipe",
+      "description": "Generative AI beyond the IDE. Ingredients for an AI-infused SDLC",
+      "created_on": "2025-04-05T00:52:05.720Z"
+    },
+    {
+      "link_id": "2025-04-05T00:49:52.315Z",
+      "url": "https://cloud.google.com/blog/topics/developers-practitioners/learn-how-to-create-an-ai-agent-for-trip-planning-with-gemini-1-5-pro",
+      "image": "https://cdn-images-1.medium.com/max/184/1*B8ovMiQN38kbeu-4yK0-VA@2x.png",
+      "title": "Build an AI agent for trip planning with Gemini",
+      "category": "recipe",
+      "description": "Build an AI agent for trip planning with Gemini 1.5 Pro: A step-by-step guide",
+      "created_on": "2025-04-05T00:49:52.315Z"
+    },
+    {
+      "link_id": "2025-04-05T00:47:19.825Z",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/combine-text-image-power-with-vertex-ai",
+      "image": "https://cdn-images-1.medium.com/max/184/1*B8ovMiQN38kbeu-4yK0-VA@2x.png",
+      "title": "Multimodal search at scale",
+      "category": "recipe",
+      "description": "Unlock multimodal search at scale: Combine text & image power with Vertex AI",
+      "created_on": "2025-04-05T00:47:19.825Z"
+    },
+    {
+      "link_id": "2025-04-05T00:44:18.094Z",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/build-a-brand-logo-with-imagen-3-and-gemini",
+      "image": "https://cdn-images-1.medium.com/max/184/1*B8ovMiQN38kbeu-4yK0-VA@2x.png",
+      "title": "Brand logo with Imagen 3 and Gemini",
+      "category": "recipe",
+      "description": "How to build a strong brand logo with Imagen 3 and Gemini",
+      "created_on": "2025-04-05T00:44:18.094Z"
+    },
+    {
+      "link_id": "2025-04-05T00:41:21.320Z",
       "url": "https://ai.google.dev/gemini-api/tutorials/sql-talk",
-      "image": "https://ai.google.dev/gemini-api/tutorials/images/sql-talk.png",
+      "image": "https://cdn-images-1.medium.com/max/184/1*B8ovMiQN38kbeu-4yK0-VA@2x.png",
       "title": "Build an AI data exploration agent with Gemini",
       "category": "recipe",
-      "description": "These instructions walk you through getting the SQL Talk project setup for development and testing.",
-      "created_on": "2025-04-03T15:41:09.230Z"
+      "description": "The SQL Talk project is an open source application that uses generative AI technology to answer questions about business data. ",
+      "created_on": "2025-04-05T00:41:21.320Z"
     },
     {
-      "link_id": "2025-04-03T15:34:17.441Z",
-      "url": "https://www.oneusefulthing.org/",
-      "image": "https://substackcdn.com/image/fetch/w_1360,c_limit,f_webp,q_auto:best,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fc9d041c0-0e71-4c6c-9896-509b8697b45e_1024x1024.png",
-      "title": "Prof. Ethan Mollick",
+      "link_id": "2025-04-05T00:40:04.527Z",
+      "url": "https://www.googlecloudcommunity.com/gc/Community-Blogs/Building-an-AI-powered-BigQuery-Data-Exploration-App-using/ba-p/716757",
+      "image": "https://cdn-images-1.medium.com/max/184/1*B8ovMiQN38kbeu-4yK0-VA@2x.png",
+      "title": "Building an AI-powered BigQuery Data Exploration App using Function Calling in Gemini",
+      "category": "recipe",
+      "description": "This enables LLMs to access real-time information and interact with various services, such as SQL databases, customer relationship management systems, document repositories, and anything else with an API!",
+      "created_on": "2025-04-05T00:40:04.527Z"
+    },
+    {
+      "link_id": "2025-04-05T00:37:06.687Z",
+      "url": "https://medium.com/google-cloud/ollama-on-cloud-run-with-gpu-in-less-than-20-seconds-d324abe33d80",
+      "image": "https://miro.medium.com/v2/resize:fit:720/format:webp/1*5NKHQDjC1cUC441HTejxuQ.png",
+      "title": "Ollama on Cloud Run with GPU ",
+      "category": "medium",
+      "description": "This guide shows you how to run Ollama with the new Gemma 3 models on Google Cloud Run, leveraging GPU acceleration for blazing-fast inference.",
+      "created_on": "2025-04-05T00:37:06.687Z"
+    },
+    {
+      "link_id": "2025-04-05T00:33:35.528Z",
+      "url": "https://medium.com/google-cloud/agentic-ai-building-a-multi-agent-ai-travel-planner-using-gemini-llm-crew-ai-6d2e93f72008",
+      "image": "https://miro.medium.com/v2/resize:fit:720/format:webp/1*5NKHQDjC1cUC441HTejxuQ.png",
+      "title": "Agentic AI : Building a Multi Agent AI Travel Planner using Gemini LLM + Crew AI",
+      "category": "medium",
+      "description": "Flight Search Automation and Hotel Recommendation",
+      "created_on": "2025-04-05T00:33:35.528Z"
+    },
+    {
+      "link_id": "2025-04-05T00:31:16.735Z",
+      "url": "https://medium.com/google-cloud/smart-workers-and-llm-function-calling-explained-part-1-f3b41dcc3110",
+      "image": "https://miro.medium.com/v2/resize:fit:720/format:webp/1*5NKHQDjC1cUC441HTejxuQ.png",
+      "title": "Function calling using Gemini",
+      "category": "medium",
+      "description": "Practical Application: Gemini Function Calling",
+      "created_on": "2025-04-05T00:31:16.735Z"
+    },
+    {
+      "link_id": "2025-04-05T00:27:25.164Z",
+      "url": "https://medium.com/google-cloud/how-to-generate-workflow-diagrams-using-gemini-8d3d538bd2e7",
+      "image": "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*k4um_H3HXe42ZD1UGuCG5Q.png",
+      "title": "How to Generate Workflow Diagrams Using Gemini",
+      "category": "medium",
+      "description": "Transform your workflow chaos into slick Mermaid diagrams with our AI-powered generator.",
+      "created_on": "2025-04-05T00:27:25.164Z"
+    },
+    {
+      "link_id": "2025-04-05T00:19:50.950Z",
+      "url": "https://codelabs.developers.google.com/codelabs/how-to-use-ollama-sidecar-open-webui-frontend-cloud-run-gpu#0",
+      "image": "https://cdn-images-1.medium.com/max/184/1*B8ovMiQN38kbeu-4yK0-VA@2x.png",
+      "title": "Ollama as a sidecar with Cloud Run",
+      "category": "recipe",
+      "description": "How to use Ollama as a sidecar with Cloud Run GPUs and Open WebUI as a frontend ingress container",
+      "created_on": "2025-04-05T00:19:50.950Z"
+    },
+    {
+      "link_id": "2025-04-05T00:16:49.726Z",
+      "url": "https://arxiv.org/pdf/2408.01768v1",
+      "image": "https://info.arxiv.org/brand/images/brand-logo-primary.jpg",
+      "title": "Building Living Software Systems with Generative & Agentic AI",
+      "category": "paper",
+      "description": "Abstract\u2014This paper is an opinion paper that looks at the\nfuture of computing in the age of Generative & Agentic AI.",
+      "created_on": "2025-04-05T00:16:49.726Z"
+    },
+    {
+      "link_id": "2025-04-05T00:15:44.216Z",
+      "url": "https://arxiv.org/pdf/2309.13060",
+      "image": "https://info.arxiv.org/brand/images/brand-logo-primary.jpg",
+      "title": "Implementing Learning Principles with a Personal AI Tutor",
+      "category": "paper",
+      "description": "Effective learning strategies based on principles like personalization, retrieval\npractice, and spaced repetition are often challenging to implement due to practical constraints.",
+      "created_on": "2025-04-05T00:15:44.216Z"
+    },
+    {
+      "link_id": "2025-04-05T00:13:00.542Z",
+      "url": "https://web.stanford.edu/class/cs234/",
+      "image": "https://identity.stanford.edu/wp-content/uploads/sites/3/2020/07/block-s-min-size-2.png",
+      "title": "CS234: Reinforcement Learning Course",
+      "category": "course",
+      "description": "Stanford University course by Emma Brunskill.\n",
+      "created_on": "2025-04-05T00:13:00.542Z"
+    },
+    {
+      "link_id": "2025-04-05T00:06:49.657Z",
+      "url": "https://github.com/GoogleCloudPlatform/cloud-run-microservice-template-go",
+      "image": "https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png",
+      "title": "Cloud Run Template Microservice for Go",
+      "category": "github",
+      "description": "A template repository for a Cloud Run microservice, written in Go.",
+      "created_on": "2025-04-05T00:06:49.657Z"
+    },
+    {
+      "link_id": "2025-04-05T00:05:00.555Z",
+      "url": "https://github.com/feder-cr/Jobs_Applier_AI_Agent_AIHawk",
+      "image": "https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png",
+      "title": "Jobs Applier AI Agent",
+      "category": "github",
+      "description": "AIHawk aims to easy job hunt process by automating the job application process. Utilizing artificial intelligence, it enables users to apply for multiple jobs in a tailored way.",
+      "created_on": "2025-04-05T00:05:00.555Z"
+    },
+    {
+      "link_id": "2025-04-05T00:03:20.324Z",
+      "url": "https://github.com/oapi-codegen/oapi-codegen",
+      "image": "https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png",
+      "title": "Open API Spec generation for Go",
+      "category": "github",
+      "description": "Generate Go client and server boilerplate from OpenAPI 3 specifications",
+      "created_on": "2025-04-05T00:03:20.324Z"
+    },
+    {
+      "link_id": "2025-04-05T00:01:25.950Z",
+      "url": "https://github.com/google-gemini/cookbook",
+      "image": "https://cdn-images-1.medium.com/max/184/1*B8ovMiQN38kbeu-4yK0-VA@2x.png",
+      "title": "Gemini API Cookbook",
+      "category": "github",
+      "description": "This cookbook provides a structured learning path for using the Gemini API, focusing on hands-on tutorials and practical examples.",
+      "created_on": "2025-04-05T00:01:25.950Z"
+    },
+    {
+      "link_id": "2025-04-04T23:53:07.347Z",
+      "url": "https://github.com/Prvargas/job-webscraper",
+      "image": "https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png",
+      "title": "job webscraper",
+      "category": "github",
+      "description": "LLM API-Powered Job Listings Data Cleaning Tool: Showcase for Data Scientists\n\nThis project leverages Large Language Model (LLM) API technology to automate the cleaning and transformation of job listings for data scientists.",
+      "created_on": "2025-04-04T23:53:07.347Z"
+    },
+    {
+      "link_id": "2025-04-04T23:49:09.081Z",
+      "url": "https://arxiv.org/pdf/2407.01476",
+      "image": "https://info.arxiv.org/brand/images/brand-logo-primary.jpg",
+      "title": "Tree Search for Language Model Agents",
+      "category": "paper",
+      "description": "Autonomous agents powered by language models (LMs) have demonstrated\npromise in their ability to perform decision-making tasks such as web automation.\nHowever, a key limitation remains: LMs, primarily optimized for natural language\nunderstanding and generation",
+      "created_on": "2025-04-04T23:49:09.081Z"
+    },
+    {
+      "link_id": "2025-04-04T23:45:38.244Z",
+      "url": "https://www.mongodb.com/developer/languages/python/python-quickstart-fastapi/?utm_campaign=fastapi_framework&utm_source=fastapi_sponsorship&utm_medium=web_referral",
+      "image": "https://www.mongodb.com/developer/_next/image/?url=https%3A%2F%2Fimages.contentstack.io%2Fv3%2Fassets%2Fblt39790b633ee0d5a7%2Fblt21fcf003e886abf4%2F647a2b35f8c078ddfdca402f%2FPython_Banner_1280x720.png&w=1920&q=75",
+      "title": "Getting Started With MongoDB and FastAPI",
+      "category": "recipe",
+      "description": "FastAPI is async, and as its name implies, it is super fast; so, MongoDB is the perfect accompaniment. In this quick start, we will create a CRUD (Create, Read, Update, Delete)",
+      "created_on": "2025-04-04T23:45:38.244Z"
+    },
+    {
+      "link_id": "2025-04-04T23:42:40.192Z",
+      "url": "https://github.com/browser-use/browser-use",
+      "image": "https://raw.githubusercontent.com/browser-use/browser-use/refs/heads/main/static/browser-use.png",
+      "title": "Browser Use Agents",
+      "category": "github",
+      "description": "Enable AI to control your browser",
+      "created_on": "2025-04-04T23:42:40.192Z"
+    },
+    {
+      "link_id": "2025-04-04T23:40:00.571Z",
+      "url": "https://github.com/trycua/acu",
+      "image": "https://raw.githubusercontent.com/trycua/acu/refs/heads/main/img/logo.png",
+      "title": "Agents for Computer Use",
+      "category": "github",
+      "description": "A curated list of resources about AI agents for Computer Use, including research papers, projects, frameworks, and tools.",
+      "created_on": "2025-04-04T23:40:00.571Z"
+    },
+    {
+      "link_id": "2025-04-04T23:34:43.766Z",
+      "url": "https://leanpub.com/ollama/read#preface",
+      "image": "https://d2sofvawe08yqg.cloudfront.net/ollama/s_hero?1736113218",
+      "title": "Ollama in Action",
+      "category": "book",
+      "description": "Building Safe, Private AI with LLMs, Function Calling and Agents",
+      "created_on": "2025-04-04T23:34:43.766Z"
+    },
+    {
+      "link_id": "2025-04-04T23:32:16.860Z",
+      "url": "https://github.com/streamlit/llm-examples",
+      "image": "https://streamlit.io/images/brand/streamlit-logo-primary-colormark-darktext.png",
+      "title": "Streamlit + LLM Examples App",
+      "category": "github",
+      "description": "This app showcases a growing collection of LLM minimum working examples.\n\nCurrent examples include:\n\nChatbot\nFile Q&A\nChat with Internet search\nLangChain Quickstart\nLangChain PromptTemplate\nChat with user feedback",
+      "created_on": "2025-04-04T23:32:16.860Z"
+    },
+    {
+      "link_id": "2025-04-04T23:26:44.121Z",
+      "url": "https://github.com/anthropics/anthropic-cookbook",
+      "image": "https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F7391c50ba33b46c30e69da83c6aa66ac08268295-1681x1260.png&w=640&q=75",
+      "title": "Anthropic Cookbook",
+      "category": "github",
+      "description": "The Anthropic Cookbook provides code and guides designed to help developers build with Claude, offering copy-able code snippets that you can easily integrate into your own projects. NL2SQL example",
+      "created_on": "2025-04-04T23:26:44.121Z"
+    },
+    {
+      "link_id": "2025-04-04T23:23:58.989Z",
+      "url": "https://github.com/anthropics/anthropic-quickstarts",
+      "image": "https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F7391c50ba33b46c30e69da83c6aa66ac08268295-1681x1260.png&w=640&q=75",
+      "title": "Anthropic Quickstart Repo",
+      "category": "github",
+      "description": "computer use demo, customer support agent, financial data analyst",
+      "created_on": "2025-04-04T23:23:58.989Z"
+    },
+    {
+      "link_id": "2025-04-04T14:49:34.982Z",
+      "url": "https://www.deeplearning.ai/the-batch/",
+      "image": "https://dl-staging-website.ghost.io/content/images/size/w1000/2025/03/unnamed--56-.jpg",
+      "title": "Andrew Ng",
       "category": "blog",
-      "description": "Trying to understand the implications of AI for work, education, and life.",
-      "created_on": "2025-04-03T15:34:17.441Z"
+      "description": "AI is the new electricity. Weekly letter from Andrew and DeepLearning.AI",
+      "created_on": "2025-04-04T14:49:34.982Z"
     },
     {
-      "link_id": "2025-04-03T15:32:45.006Z",
-      "url": "https://huyenchip.com/",
+      "link_id": "2025-04-04T14:42:56.328Z",
+      "url": "https://huyenchip.com/blog/",
       "image": "https://huyenchip.com/assets/profile.jpeg",
       "title": "Chip Huyen",
       "category": "blog",
-      "description": "My focus is on ML/AI systems in production. I\u2019m currently exploring creative use cases of AI in education and entertainment.",
-      "created_on": "2025-04-03T15:32:45.006Z"
+      "description": "The graduate from Stanford, teaching ML Systems. The lectures became the foundation for the book \"Designing Machine Learning Systems\". The new book \"AI Engineering\" in 2025.",
+      "created_on": "2025-04-04T14:42:56.328Z"
+    },
+    {
+      "link_id": "2025-04-04T14:38:24.787Z",
+      "url": "https://www.oneusefulthing.org/archive",
+      "image": "https://substackcdn.com/image/fetch/w_1360,c_limit,f_webp,q_auto:best,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fc9d041c0-0e71-4c6c-9896-509b8697b45e_1024x1024.png",
+      "title": "Ethan Mollick",
+      "category": "blog",
+      "description": "This blog/newsletter provides a research-based view on the implications of AI, by Prof. Ethan Mollick. Free resources and prompts are compiled at More Useful Things. You might also be interested in my New York Times bestselling book, Co-Intelligence.",
+      "created_on": "2025-04-04T14:38:24.787Z"
     }
   ]
 }
