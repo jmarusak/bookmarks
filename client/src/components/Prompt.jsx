@@ -2,11 +2,18 @@ import { useState } from "react";
 import "./Prompt.css";
 
 const Prompt = ({ onSubmit }) => {
-  const [prompt, setPrompt] = useState("");
+  const [userPrompt, setUserPrompt] = useState("");
 
   const handleSubmit = () => {
-    onSubmit(prompt);
+    onSubmit(userPrompt);
   };
+
+  const handleKeyDown = (event) => {
+    if (event.key === "Enter" && !event.shiftKey) {
+      event.preventDefault();
+      onSubmit(userPrompt);
+    }
+  }
 
   return (
     <div className="prompt-container">
@@ -15,8 +22,9 @@ const Prompt = ({ onSubmit }) => {
         rows="1"
         className="prompt-textarea"
         placeholder="Type your semantic query here..."
-        value={prompt}
-        onChange={(e) => setPrompt(e.target.value)}
+        value={userPrompt}
+        onKeyDown={handleKeyDown}
+        onChange={(e) => setUserPrompt(e.target.value)}
       />
       <button className="prompt-button" onClick={handleSubmit}>
         Search 

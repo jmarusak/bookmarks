@@ -7,7 +7,7 @@ const ListPage = () => {
 
   const [rowData, setRowData] = useState([]);
 
-  const fetchData = async () => {
+  const fetchAllData = async () => {
     try {
       const response = await fetch('http://localhost:8000/api/links');
       if (!response.ok) {
@@ -19,13 +19,27 @@ const ListPage = () => {
       console.error('Error fetching data:', error);
     }
   };
+  
+  const fetchCustomData = async (userPrompt) => {
+    try {
+      const url_api = 'http://localhost:8000/api/custom?query=' + encodeURIComponent(userPrompt);
+      const response = await fetch(url_api);
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      const data = await response.json();
+      setRowData(data);
+    } catch (error) {
+      console.error('Error fetching data:', error);
+    }
+  };
 
   useEffect(() => {
-    fetchData();
+    fetchAllData();
   }, []);
 
-  const handleSubmit = (prompt) => {
-    console.log("Prompt submitted:", prompt);
+  const handleSubmit = (userPrompt) => {
+    fetchCustomData(userPrompt);
   };
 
   return (

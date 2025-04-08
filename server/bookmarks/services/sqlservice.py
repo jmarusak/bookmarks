@@ -35,6 +35,18 @@ class SqlService:
         conn.close()
         return [Link.model_validate(link) for link in links]
 
+    def getCustom(self, query: str) -> list[Link]:
+        conn = sqlite3.connect(self.store)
+        cursor = conn.cursor()
+        cursor.execute(query)
+        rows = cursor.fetchall()
+        links = [
+            {columns[column]: value for column, value in enumerate(row)}
+            for row in rows
+        ]
+        conn.close()
+        return [Link.model_validate(link) for link in links]
+
     def delete(self, link_id: str) -> None:
         conn = sqlite3.connect(self.store)
         cursor = conn.cursor()

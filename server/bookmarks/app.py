@@ -6,6 +6,8 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from bookmarks.models.link import Link
 
+from bookmarks.services import generate_sql_query
+
 api: FastAPI = FastAPI()
 api.mount("/static", StaticFiles(directory="bookmarks/static", html=True), name="static")
 api.add_middleware(
@@ -39,6 +41,14 @@ def create_link(link: Link):
 @api.get("/api/links", response_model=List[Link])
 def get_all_links():
     return service.getAll()
+
+@api.get("/api/custom", response_model=List[Link])
+def get_custom_links(query: str): 
+    user_prompt = query
+    sql_query = generate_sql_query(user_prompt)
+    print(f"user_prompt: {user_prompt}")
+    print(f"sql_query: {sql_query}")
+    return service.getCustom(sql_query)
 
 @api.delete("/api/links/{link_id}")
 def delete_link(link_id: str):
